@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aiman Haroon - Trusted Global Brand & Company Formation in the USA. 5+ years experience, 500+ businesses formed, 100% compliance rate.">
+<meta name="keywords" content="LLC formation USA, business formation, EIN, ITIN, trademark registration, company formation, brand development, tax filing">
+<title>Aiman Haroon | USA Business Formation & Brand Development</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #0a0a0a;
+    --accent: #c8a96e;
+    --accent-light: #e8d5a3;
+    --white: #ffffff;
+    --gray-100: #f8f6f2;
+    --gray-200: #ede9e1;
+    --gray-400: #9a9080;
+    --gray-700: #4a4540;
+    --text: #1a1714;
+    --nav-h: 72px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── TOPBAR ── */
+  .topbar {
+    background: var(--primary);
+    color: var(--accent-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    padding: 8px 0;
+    text-align: center;
+  }
+  .topbar a { color: var(--accent-light); text-decoration: none; margin: 0 16px; }
+  .topbar a:hover { color: var(--white); }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gray-200);
+    height: var(--nav-h);
+    display: flex; align-items: center;
+  }
+  .nav-inner {
+    max-width: 1280px; margin: 0 auto; padding: 0 40px;
+    display: flex; align-items: center; justify-content: space-between; width: 100%;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; font-weight: 700;
+    color: var(--primary); text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+  .logo span { color: var(--accent); }
+  .nav-links {
+    display: flex; align-items: center; gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.88rem; font-weight: 500;
+    color: var(--gray-700); text-decoration: none;
+    letter-spacing: 0.02em; transition: color 0.2s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; bottom: -3px; left: 0;
+    width: 0; height: 1px; background: var(--accent);
+    transition: width 0.3s;
+  }
+  .nav-links a:hover { color: var(--primary); }
+  .nav-links a:hover::after { width: 100%; }
+  .dropdown { position: relative; }
+  .dropdown-menu {
+    display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    background: var(--white); border: 1px solid var(--gray-200);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    padding: 16px 0; min-width: 220px;
+    border-radius: 4px; margin-top: 12px;
+  }
+  .dropdown:hover .dropdown-menu { display: block; }
+  .dropdown-menu a {
+    display: block; padding: 10px 24px;
+    font-size: 0.84rem; color: var(--gray-700);
+  }
+  .dropdown-menu a:hover { background: var(--gray-100); color: var(--primary); }
+  .dropdown-menu a::after { display: none; }
+  .btn-consult {
+    background: var(--accent); color: var(--primary);
+    padding: 10px 24px; border-radius: 2px;
+    font-size: 0.84rem; font-weight: 600;
+    text-decoration: none; letter-spacing: 0.04em;
+    transition: all 0.2s; white-space: nowrap;
+  }
+  .btn-consult:hover { background: var(--primary); color: var(--white); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: calc(100vh - var(--nav-h) - 38px);
+    background: var(--primary);
+    display: grid; grid-template-columns: 1fr 1fr;
+    align-items: center; position: relative; overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(200,169,110,0.12) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; opacity: 0.04;
+    background-image: linear-gradient(var(--accent) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--accent) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content {
+    padding: 80px 80px 80px 10%;
+    position: relative; z-index: 2;
+    animation: fadeUp 0.9s ease both;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(200,169,110,0.15); border: 1px solid rgba(200,169,110,0.3);
+    color: var(--accent); padding: 6px 16px;
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
+    text-transform: uppercase; border-radius: 100px; margin-bottom: 28px;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    font-weight: 700; color: var(--white);
+    line-height: 1.15; margin-bottom: 24px;
+    letter-spacing: -0.02em;
+  }
+  .hero-title em { color: var(--accent); font-style: normal; }
+  .hero-desc {
+    color: rgba(255,255,255,0.65);
+    font-size: 1.05rem; line-height: 1.8;
+    max-width: 480px; margin-bottom: 36px;
+  }
+  .hero-stats {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    gap: 20px; margin-bottom: 40px;
+  }
+  .stat-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(200,169,110,0.2);
+    padding: 16px 20px; border-radius: 4px;
+  }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem; font-weight: 700;
+    color: var(--accent); line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.78rem; color: rgba(255,255,255,0.5);
+    margin-top: 4px; letter-spacing: 0.04em;
+  }
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--accent); color: var(--primary);
+    padding: 14px 32px; font-weight: 700; font-size: 0.9rem;
+    text-decoration: none; border-radius: 2px;
+    letter-spacing: 0.04em; transition: all 0.25s;
+    border: 2px solid var(--accent);
+  }
+  .btn-primary:hover { background: var(--white); border-color: var(--white); }
+  .btn-outline {
+    background: transparent; color: var(--white);
+    padding: 14px 32px; font-weight: 600; font-size: 0.9rem;
+    text-decoration: none; border-radius: 2px;
+    letter-spacing: 0.04em; transition: all 0.25s;
+    border: 2px solid rgba(255,255,255,0.3);
+  }
+  .btn-outline:hover { border-color: var(--white); background: rgba(255,255,255,0.05); }
+  .hero-visual {
+    position: relative; z-index: 2;
+    padding: 80px 10% 80px 40px;
+    display: flex; align-items: center; justify-content: center;
+    animation: fadeUp 1.1s 0.2s ease both;
+  }
+  .hero-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(200,169,110,0.25);
+    border-radius: 12px; padding: 36px;
+    backdrop-filter: blur(8px);
+    max-width: 420px; width: 100%;
+  }
+  .hero-card-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--white); font-size: 1.1rem; margin-bottom: 24px;
+    padding-bottom: 16px; border-bottom: 1px solid rgba(200,169,110,0.2);
+  }
+  .checklist { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .checklist li {
+    display: flex; align-items: center; gap: 12px;
+    color: rgba(255,255,255,0.8); font-size: 0.92rem;
+  }
+  .checklist li::before {
+    content: '✓'; width: 22px; height: 22px;
+    background: rgba(200,169,110,0.2); color: var(--accent);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 0.7rem; font-weight: 700; flex-shrink: 0;
+  }
+  .hero-divider {
+    background: var(--primary); color: var(--accent-light);
+    text-align: center; padding: 20px;
+    font-size: 0.82rem; letter-spacing: 0.06em;
+    border-top: 1px solid rgba(200,169,110,0.2);
+    font-style: italic;
+  }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 100px 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+  .section-eyebrow {
+    font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+    font-weight: 700; color: var(--primary);
+    letter-spacing: -0.02em; line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  .section-desc {
+    color: var(--gray-400); font-size: 1rem;
+    line-height: 1.8; max-width: 560px;
+  }
+  .section-header { margin-bottom: 60px; }
+
+  /* ── SERVICES ── */
+  #services { background: var(--gray-100); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2px;
+  }
+  .service-card {
+    background: var(--white);
+    padding: 36px 32px;
+    transition: all 0.3s;
+    position: relative; overflow: hidden;
+    cursor: pointer;
+  }
+  .service-card::before {
+    content: ''; position: absolute;
+    bottom: 0; left: 0; right: 0; height: 3px;
+    background: var(--accent); transform: scaleX(0);
+    transform-origin: left; transition: transform 0.3s;
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); z-index: 1; }
+  .service-icon {
+    width: 48px; height: 48px;
+    background: var(--gray-100); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; margin-bottom: 20px;
+  }
+  .service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem; font-weight: 600;
+    color: var(--primary); margin-bottom: 10px;
+  }
+  .service-card p {
+    color: var(--gray-400); font-size: 0.86rem; line-height: 1.7;
+  }
+
+  /* ── PACKAGES ── */
+  #packages { background: var(--primary); }
+  #packages .section-title { color: var(--white); }
+  #packages .section-eyebrow { color: var(--accent); }
+  #packages .section-desc { color: rgba(255,255,255,0.5); }
+  .packages-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2px; margin-top: 60px;
+  }
+  .package-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(200,169,110,0.15);
+    padding: 48px 36px;
+    position: relative; transition: all 0.3s;
+  }
+  .package-card.featured {
+    background: rgba(200,169,110,0.1);
+    border-color: var(--accent);
+  }
+  .package-badge {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: var(--primary);
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+    padding: 4px 16px; text-transform: uppercase; border-radius: 100px;
+    white-space: nowrap;
+  }
+  .package-name {
+    font-size: 0.8rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 16px;
+  }
+  .package-price {
+    display: flex; align-items: baseline; gap: 4px;
+    margin-bottom: 8px;
+  }
+  .package-price .amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem; font-weight: 700;
+    color: var(--white); line-height: 1;
+  }
+  .package-price .currency { font-size: 1.4rem; color: var(--accent); font-weight: 600; }
+  .package-note { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-bottom: 32px; }
+  .package-features { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px; }
+  .package-features li {
+    display: flex; align-items: flex-start; gap: 10px;
+    color: rgba(255,255,255,0.7); font-size: 0.88rem; line-height: 1.5;
+  }
+  .package-features li span.check { color: var(--accent); flex-shrink: 0; }
+  .btn-package {
+    display: block; text-align: center; padding: 14px;
+    border: 1.5px solid rgba(200,169,110,0.4); color: var(--accent);
+    text-decoration: none; font-size: 0.88rem; font-weight: 600;
+    letter-spacing: 0.05em; transition: all 0.2s; border-radius: 2px;
+  }
+  .btn-package:hover, .package-card.featured .btn-package {
+    background: var(--accent); color: var(--primary); border-color: var(--accent);
+  }
+
+  /* ── WHY CHOOSE US ── */
+  #why { background: var(--white); }
+  .why-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+  .why-list { display: flex; flex-direction: column; gap: 32px; }
+  .why-item { display: flex; gap: 24px; align-items: flex-start; }
+  .why-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; font-weight: 700;
+    color: var(--gray-200); line-height: 1;
+    min-width: 50px; user-select: none;
+  }
+  .why-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem; color: var(--primary); margin-bottom: 8px;
+  }
+  .why-text p { color: var(--gray-400); font-size: 0.9rem; line-height: 1.7; }
+  .why-visual {
+    background: var(--gray-100);
+    border-radius: 8px; padding: 48px;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .why-visual-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem; color: var(--primary); margin-bottom: 8px;
+  }
+  .trust-bar { margin-top: 20px; }
+  .trust-bar-label { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--gray-700); margin-bottom: 6px; }
+  .trust-bar-track { background: var(--gray-200); height: 6px; border-radius: 100px; overflow: hidden; }
+  .trust-bar-fill { height: 100%; background: var(--accent); border-radius: 100px; }
+
+  /* ── JOURNEY ── */
+  #journey { background: var(--gray-100); }
+  .journey-intro { color: var(--gray-400); max-width: 600px; font-size: 1rem; line-height: 1.8; margin-bottom: 64px; }
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step {
+    display: grid; grid-template-columns: 80px 1fr;
+    gap: 32px; align-items: flex-start;
+    padding: 36px 0; border-bottom: 1px solid var(--gray-200);
+    transition: all 0.2s;
+  }
+  .step:last-child { border-bottom: none; }
+  .step:hover .step-num { background: var(--primary); color: var(--accent); }
+  .step-num {
+    width: 64px; height: 64px;
+    background: var(--white); border: 2px solid var(--gray-200);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700;
+    color: var(--accent); transition: all 0.3s; flex-shrink: 0;
+  }
+  .step-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem; color: var(--primary); margin-bottom: 8px;
+  }
+  .step-content p { color: var(--gray-400); font-size: 0.9rem; line-height: 1.7; }
+
+  /* ── REVIEWS ── */
+  #reviews { background: var(--white); }
+  .reviews-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 60px;
+  }
+  .trustpilot-badge {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 24px;
+    background: var(--gray-100); border-radius: 4px;
+  }
+  .trustpilot-stars { color: #00b67a; font-size: 1.1rem; letter-spacing: 2px; }
+  .trustpilot-text { font-size: 0.82rem; color: var(--gray-700); line-height: 1.4; }
+  .trustpilot-text strong { display: block; color: var(--primary); }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .review-card {
+    background: var(--gray-100);
+    padding: 32px; border-radius: 6px;
+    transition: transform 0.3s;
+  }
+  .review-card:hover { transform: translateY(-4px); }
+  .review-stars { color: #f59e0b; font-size: 0.9rem; margin-bottom: 16px; letter-spacing: 2px; }
+  .review-text {
+    font-size: 0.9rem; color: var(--gray-700);
+    line-height: 1.75; margin-bottom: 20px;
+    font-style: italic;
+  }
+  .review-author { display: flex; align-items: center; gap: 12px; }
+  .review-avatar {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--accent); display: flex;
+    align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.82rem; color: var(--primary);
+    flex-shrink: 0;
+  }
+  .review-name { font-weight: 600; font-size: 0.88rem; color: var(--primary); }
+  .review-country { font-size: 0.78rem; color: var(--gray-400); }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--primary); }
+  #contact .section-title { color: var(--white); }
+  #contact .section-eyebrow { color: var(--accent); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; align-items: start; }
+  .contact-info { display: flex; flex-direction: column; gap: 28px; }
+  .contact-item { display: flex; gap: 16px; align-items: flex-start; }
+  .contact-icon {
+    width: 44px; height: 44px; background: rgba(200,169,110,0.15);
+    border: 1px solid rgba(200,169,110,0.3); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; flex-shrink: 0;
+  }
+  .contact-detail { color: rgba(255,255,255,0.5); font-size: 0.82rem; margin-bottom: 2px; }
+  .contact-value { color: var(--white); font-size: 0.95rem; font-weight: 500; }
+  .contact-form { display: flex; flex-direction: column; gap: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 8px; }
+  .form-group label { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+  .form-group input, .form-group select, .form-group textarea {
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(200,169,110,0.2);
+    color: var(--white); padding: 14px 16px; font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem; border-radius: 4px; transition: border-color 0.2s; outline: none;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .form-group select option { background: #1a1714; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--accent); }
+  .form-group textarea { min-height: 120px; resize: vertical; }
+  .form-checkbox { display: flex; align-items: flex-start; gap: 12px; }
+  .form-checkbox input[type="checkbox"] { margin-top: 3px; accent-color: var(--accent); flex-shrink: 0; cursor: pointer; }
+  .form-checkbox label { color: rgba(255,255,255,0.5); font-size: 0.84rem; line-height: 1.5; cursor: pointer; }
+  .form-checkbox label a { color: var(--accent); }
+  .btn-submit {
+    background: var(--accent); color: var(--primary);
+    padding: 16px 40px; font-weight: 700; font-size: 0.92rem;
+    letter-spacing: 0.05em; border: none; cursor: pointer;
+    border-radius: 2px; transition: all 0.2s; font-family: 'DM Sans', sans-serif;
+    align-self: flex-start;
+  }
+  .btn-submit:hover { background: var(--white); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #050505;
+    border-top: 1px solid rgba(200,169,110,0.15);
+    padding: 60px 0 32px;
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px; margin-bottom: 48px;
+  }
+  .footer-brand p { color: rgba(255,255,255,0.4); font-size: 0.88rem; line-height: 1.8; margin-top: 16px; max-width: 300px; }
+  .footer-social { display: flex; gap: 12px; margin-top: 24px; }
+  .social-icon {
+    width: 36px; height: 36px; background: rgba(200,169,110,0.1);
+    border: 1px solid rgba(200,169,110,0.2); color: var(--accent);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem; font-weight: 700; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .social-icon:hover { background: var(--accent); color: var(--primary); }
+  .footer-col h4 {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 20px;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { color: rgba(255,255,255,0.45); font-size: 0.86rem; text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--accent); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 24px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer-bottom p { color: rgba(255,255,255,0.3); font-size: 0.8rem; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── HAMBURGER (mobile) ── */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .hamburger span { width: 24px; height: 2px; background: var(--primary); display: block; transition: all 0.3s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .hero-content { padding: 80px 40px; }
+    .packages-grid { grid-template-columns: 1fr; max-width: 480px; margin: 60px auto 0; }
+    .why-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .container { padding: 0 24px; }
+    section { padding: 72px 0; }
+    .hero-content { padding: 60px 24px; }
+    .hero-stats { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .reviews-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <a href="mailto:inbox@aimanharoon.com">📧 inbox@aimanharoon.com</a>
+  <a href="tel:+441515285411">📞 +44 151 528 5411</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">Aiman <span>Haroon</span></a>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="#services">Business Formation ▾</a>
+        <div class="dropdown-menu">
+          <a href="#services">Form An LLC</a>
+          <a href="#services">Form A C Corporation</a>
+          <a href="#services">Form An S Corporation</a>
+          <a href="#services">Form A Non Profit</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#services">Tax Filing ▾</a>
+        <div class="dropdown-menu">
+          <a href="#services">Annual Report</a>
+          <a href="#services">Quarterly Tax Filing</a>
+          <a href="#services">BOI Report</a>
+          <a href="#services">Federal Income Tax Filing</a>
+          <a href="#services">Franchise Tax Filing</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#services">Business Management ▾</a>
+        <div class="dropdown-menu">
+          <a href="#services">Company Dissolution</a>
+          <a href="#services">Company Reinstatement</a>
+          <a href="#services">Company Amendment</a>
+          <a href="#services">Change Ownership</a>
+          <a href="#services">Penalty Waived</a>
+        </div>
+      </li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-consult">Book Free Consultation</a>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">✦ Trusted Since 2019</div>
+    <h1 class="hero-title">
+      Trusted Global <em>Brand &</em><br>Company Formation<br>in the USA
+    </h1>
+    <p class="hero-desc">
+      Aiman Haroon is a trusted business strategist specializing in U.S. company formation and global brand development — offering professional, reliable solutions with over 5 years of industry experience.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years of Excellence</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Businesses Formed</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Compliance Rate</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">50</div>
+        <div class="stat-label">U.S. States + Global</div>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-primary">Book Free Consultation</a>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card">
+      <div class="hero-card-title">Everything Your Business Needs</div>
+      <ul class="checklist">
+        <li>LLC & Corporation Formation — All 50 States</li>
+        <li>EIN, ITIN & Seller's Permit</li>
+        <li>Annual & Quarterly Tax Filing</li>
+        <li>Trademark & Brand Protection</li>
+        <li>Company Amendment & Reinstatement</li>
+        <li>Penalty Waiver Assistance</li>
+        <li>Brand Development & Positioning</li>
+        <li>Ongoing Compliance Support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="hero-divider">
+  Independently built and passionately grown — serving entrepreneurs worldwide with trusted business solutions that inspire lasting success.
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">What We Offer</div>
+      <h2 class="section-title">Business Services for All<br>Under One Roof</h2>
+      <p class="section-desc">Get all your professional business services in one place. From company formation to compliance and brand development, we provide everything you need with care and precision.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>LLC Formation in the USA</h3>
+        <p>We register your U.S. LLC quickly and legally in any state. Fast processing, full compliance, and affordable business formation services.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🪪</div>
+        <h3>Get Your EIN</h3>
+        <p>Secure your EIN from the IRS to open a U.S. business bank account, file taxes, hire employees, and meet all federal requirements.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📋</div>
+        <h3>ITIN</h3>
+        <p>Apply for your ITIN to meet IRS requirements for tax filing, U.S. business ownership, and receiving income without a Social Security Number.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔄</div>
+        <h3>Company Reinstatement</h3>
+        <p>Reinstate your dissolved or inactive company to restore legal status, avoid penalties, and resume business operations in full compliance.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✏️</div>
+        <h3>Company Amendment</h3>
+        <p>Update your company details legally. Amend business name, address, ownership, or structure while staying compliant with state filing rules.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛡️</div>
+        <h3>Penalty Waiver Assistance</h3>
+        <p>Eliminate IRS and state penalties through a strong appeal process. Resolve compliance issues and get your business back on track.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📌</div>
+        <h3>Company Dissolution</h3>
+        <p>Legally dissolve your U.S. company with confidence. Submit official documents, finalize compliance, and avoid penalties through smooth closure.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">™️</div>
+        <h3>Trademark Registration</h3>
+        <p>Protect your brand name, logo, or slogan with a registered U.S. trademark. We handle the full filing process to secure your intellectual property.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔢</div>
+        <h3>DUNS Number</h3>
+        <p>Secure your DUNS Number to build business credibility. Required for government contracts, credit profiles, and supplier relationships.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🧾</div>
+        <h3>Seller's Permit</h3>
+        <p>Obtain your Seller Permit to legally sell products in the U.S. Meet state requirements, collect sales tax, and operate with full compliance.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Brand Development</h3>
+        <p>Build a powerful private label brand. Define your vision, create a strong identity, and position your business to grow and compete confidently.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Tax Filing (Quarterly & Annual)</h3>
+        <p>Manage your quarterly and annual tax filing. Stay compliant, avoid penalties, and keep your U.S. business finances organized and accurate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Pricing</div>
+      <h2 class="section-title">Choose Your Package</h2>
+      <p class="section-desc">One-time payments. No hidden fees. No recurring subscriptions. Pick the plan that's right for your business.</p>
+    </div>
+    <div class="packages-grid">
+      <div class="package-card">
+        <div class="package-name">Basics</div>
+        <div class="package-price">
+          <span class="currency">$</span>
+          <span class="amount">69</span>
+        </div>
+        <div class="package-note">One-time payment + State Fee</div>
+        <ul class="package-features">
+          <li><span class="check">✓</span> Business name research</li>
+          <li><span class="check">✓</span> Unique business address</li>
+          <li><span class="check">✓</span> Articles of organization</li>
+          <li><span class="check">✓</span> Operating agreement</li>
+        </ul>
+        <a href="#contact" class="btn-package">Get Started</a>
+      </div>
+      <div class="package-card featured">
+        <div class="package-badge">Recommended</div>
+        <div class="package-name">Standard</div>
+        <div class="package-price">
+          <span class="currency">$</span>
+          <span class="amount">99</span>
+        </div>
+        <div class="package-note">One-time payment + State Fee</div>
+        <ul class="package-features">
+          <li><span class="check">✓</span> Everything in Basics</li>
+          <li><span class="check">✓</span> Employer Identification Number (EIN)</li>
+          <li><span class="check">✓</span> Resale/Tax exemption certificate</li>
+          <li><span class="check">✓</span> State portal access</li>
+          <li><span class="check">✓</span> 1-year registered agent service</li>
+        </ul>
+        <a href="#contact" class="btn-package">Get Started</a>
+      </div>
+      <div class="package-card">
+        <div class="package-badge" style="background: var(--gray-400);">Best Value</div>
+        <div class="package-name">Premium</div>
+        <div class="package-price">
+          <span class="currency">$</span>
+          <span class="amount">129</span>
+        </div>
+        <div class="package-note">One-time payment + State Fee</div>
+        <ul class="package-features">
+          <li><span class="check">✓</span> Everything in Standard</li>
+          <li><span class="check">✓</span> Business bank account setup</li>
+          <li><span class="check">✓</span> Business Tax Consultation</li>
+          <li><span class="check">✓</span> Lifetime Compliance alerts</li>
+        </ul>
+        <a href="#contact" class="btn-package">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <div class="section-eyebrow">Why Choose Us</div>
+        <h2 class="section-title">What Makes<br>Aiman Haroon Different</h2>
+        <div class="why-list" style="margin-top:40px;">
+          <div class="why-item">
+            <div class="why-num">01</div>
+            <div class="why-text">
+              <h3>One Time Payment</h3>
+              <p>Every package comes with a single, one time payment. Enjoy clear, upfront pricing with no hidden charges or recurring subscription fees.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">02</div>
+            <div class="why-text">
+              <h3>Full Transparency</h3>
+              <p>Complete clarity at every stage. All processes, documents, and costs are openly shared — building trust while eliminating unexpected surprises.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">03</div>
+            <div class="why-text">
+              <h3>100% Compliance</h3>
+              <p>We follow current U.S. business laws and state regulations, ensuring every company is accurately formed, fully compliant, and legally recognized.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">04</div>
+            <div class="why-text">
+              <h3>Personal Guidance</h3>
+              <p>Dedicated support throughout the entire business setup process, ensuring every step is simplified for a smooth, confident experience.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">05</div>
+            <div class="why-text">
+              <h3>Real Results</h3>
+              <p>Every service is designed for measurable business growth, with proven strategies that strengthen brands and create long-term success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="why-visual">
+          <div class="why-visual-title">Our Track Record</div>
+          <p style="color:var(--gray-400);font-size:0.88rem;line-height:1.7;">Trusted by entrepreneurs across 50 U.S. states and globally, Aiman Haroon consistently delivers results.</p>
+          <div class="trust-bar">
+            <div class="trust-bar-label"><span>Client Satisfaction</span><span>98%</span></div>
+            <div class="trust-bar-track"><div class="trust-bar-fill" style="width:98%"></div></div>
+          </div>
+          <div class="trust-bar">
+            <div class="trust-bar-label"><span>Compliance Rate</span><span>100%</span></div>
+            <div class="trust-bar-track"><div class="trust-bar-fill" style="width:100%"></div></div>
+          </div>
+          <div class="trust-bar">
+            <div class="trust-bar-label"><span>On-Time Filing</span><span>99%</span></div>
+            <div class="trust-bar-track"><div class="trust-bar-fill" style="width:99%"></div></div>
+          </div>
+          <div class="trust-bar">
+            <div class="trust-bar-label"><span>Businesses Formed</span><span>500+</span></div>
+            <div class="trust-bar-track"><div class="trust-bar-fill" style="width:85%"></div></div>
+          </div>
+          <div style="margin-top:32px;padding-top:24px;border-top:1px solid var(--gray-200);display:flex;gap:24px;">
+            <div>
+              <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--primary);">5+</div>
+              <div style="font-size:0.78rem;color:var(--gray-400);margin-top:4px;">Years Experience</div>
+            </div>
+            <div>
+              <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--primary);">50</div>
+              <div style="font-size:0.78rem;color:var(--gray-400);margin-top:4px;">U.S. States</div>
+            </div>
+            <div>
+              <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--primary);">Global</div>
+              <div style="font-size:0.78rem;color:var(--gray-400);margin-top:4px;">Client Base</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="container">
+    <div class="section-eyebrow">The Process</div>
+    <h2 class="section-title">Your Journey with Aiman Haroon</h2>
+    <p class="journey-intro">Build your U.S. business confidently. This simple, strategic process is designed to ensure legal compliance, seamless setup, and ongoing support every step of the way.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Initial Consultation</h3>
+          <p>Discuss your business vision, goals, and structure. Get personalized guidance on forming your U.S. company, tax obligations, and the best approach to stay compliant from day one.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Regulatory Compliance</h3>
+          <p>Complete all legal registrations required for your business. From LLC filing to IRS documents and permits, stay fully aligned with U.S. regulations and avoid penalties or rejections.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Service Implementation</h3>
+          <p>Once your strategy is defined, essential filings begin. Get help with EIN, ITIN, Seller Permit, and trademark applications while ensuring accuracy across every submission and document.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Review and Optimization</h3>
+          <p>Review every completed step for compliance and quality. Identify areas to improve operations, manage filings properly, and prepare your business for growth and long-term sustainability.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h3>Ongoing Support</h3>
+          <p>Receive consistent business support after setup. Get reminders for tax filing, updates on compliance changes, and professional assistance with amendments, reinstatements, and penalty waivers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="reviews-header">
+      <div>
+        <div class="section-eyebrow">Testimonials</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="trustpilot-badge">
+        <div>
+          <div class="trustpilot-stars">★★★★★</div>
+          <div class="trustpilot-text"><strong>Excellent 4.9/5</strong>Based on client reviews</div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Aiman made the entire LLC formation process incredibly simple. Within days my company was registered and I had my EIN. Truly professional and responsive."</p>
+        <div class="review-author">
+          <div class="review-avatar">MK</div>
+          <div><div class="review-name">Muhammad K.</div><div class="review-country">🇵🇰 Pakistan</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I was worried about compliance but Aiman's team handled everything. Trademark registration was smooth and I got my DUNS number faster than expected."</p>
+        <div class="review-author">
+          <div class="review-avatar">SA</div>
+          <div><div class="review-name">Sara A.</div><div class="review-country">🇦🇪 UAE</div></div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The one-time payment model was a breath of fresh air. No surprises, no subscriptions. My C-Corp was formed efficiently and I felt supported throughout."</p>
+        <div class="review-author">
+          <div class="review-avatar">JT</div>
+          <div><div class="review-name">James T.</div><div class="review-country">🇬🇧 United Kingdom</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-eyebrow">Get In Touch</div>
+    <h2 class="section-title" style="color:var(--white);">Ready to Build Your<br>U.S. Business?</h2>
+    <div style="height:60px"></div>
+    <div class="contact-grid">
+      <div>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.95rem;line-height:1.8;margin-bottom:40px;">Reach out and let's discuss how we can help you form, manage, and grow your business in the United States.</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-detail">Phone</div>
+              <div class="contact-value">+44 151 528 5411</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-detail">Email</div>
+              <div class="contact-value">inbox@aimanharoon.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div>
+              <div class="contact-detail">Preferred Contact</div>
+              <div class="contact-value">Email · WhatsApp · Google Meet</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First & Last Name</label>
+            <input type="text" placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+1 (country code)">
+          </div>
+          <div class="form-group">
+            <label>Preferred Contact Method</label>
+            <select>
+              <option value="">Select method</option>
+              <option>Email</option>
+              <option>WhatsApp</option>
+              <option>Google Meet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Service You're Interested In</label>
+          <select>
+            <option value="">Select a service</option>
+            <option>Form an LLC</option>
+            <option>Business Management</option>
+            <option>Brand Development</option>
+            <option>Tax Filing</option>
+            <option>EIN / ITIN</option>
+            <option>Trademark Registration</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Additional Details</label>
+          <textarea placeholder="Tell us about your business goals..."></textarea>
+        </div>
+        <div class="form-checkbox">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the <a href="#">terms of service</a> and <a href="#">privacy policy</a></label>
+        </div>
+        <button class="btn-submit">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" style="font-size:1.3rem;">Aiman <span>Haroon</span></a>
+        <p>Trusted USA business setup, compliance, and brand development services for entrepreneurs worldwide.</p>
+        <div class="footer-social">
+          <a href="#" class="social-icon">f</a>
+          <a href="#" class="social-icon">in</a>
+          <a href="#" class="social-icon">𝕏</a>
+          <a href="#" class="social-icon">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#journey">Our Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Form An LLC</a></li>
+          <li><a href="#services">Tax Filing</a></li>
+          <li><a href="#services">Business License</a></li>
+          <li><a href="#services">Brand Development</a></li>
+          <li><a href="#services">Trademark</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:inbox@aimanharoon.com">inbox@aimanharoon.com</a></li>
+          <li><a href="tel:+441515285411">+44 151 528 5411</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Aiman Haroon. All rights reserved.</p>
+      <p>Designed with care for entrepreneurs worldwide.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleNav() {
+    const links = document.querySelector('.nav-links');
+    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '72px';
+    links.style.left = '0'; links.style.right = '0';
+    links.style.background = '#fff';
+    links.style.padding = '24px 40px';
+    links.style.borderBottom = '1px solid #ede9e1';
+    links.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+    links.style.zIndex = '99';
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.service-card, .package-card, .why-item, .step, .review-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(24px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
